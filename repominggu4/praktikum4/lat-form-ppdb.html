@@ -2,8 +2,83 @@
 <html>
     <head>
         <title>FORMULIR PPDB JALUR ZONASI TAHUN 2020</title>
+        <style>
+            table, th{
+                    border-collapse: collapse;
+                    width: 35%;
+                    border: 3px solid black;
+                }
+
+            td{
+                border-bottom: 3px solid black;
+            }
+
+            .nomor{
+                    width: 1%;
+                    text-align: center;
+                    border:3px solid black;
+                }
+            
+        </style>
     </head>
     <body>
-        
+        <form action="lat-form-ppdb.php" method="post">
+            <fieldset>
+                <legend>FOMULIR PPDB JALUR ZONASI TAHUN 2020</legend>
+                    <table style="width:100%">
+                        <p>
+                            <tr>
+                                <th class="nomor">Nomor</th>
+                                <th style="text-align:left" colspan="2">INFO PENDAFTARAN</th>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td class="nomor">1</td>
+                                <td>NISN</td>
+                                <td>:<input type="text" name="NISN" placeholder="No Induk Siswa Nasional..."/></td>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td class="nomor">2</td>
+                                <td>Asal Sekolah</td>
+                                <td>:<input type="text" name="asal-sekolah" placeholder="Asal Sekolah..."/></td>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td class="nomor">3</td>
+                                <td>Tahun Lulus</td>
+                                <td>:<input type="text" name="tahun-lulus" placeholder="Tahun Lulus...."/></td>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td colspan="3"><b>DATA CALON PESERTA</b></td>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td class="nomor">4</td>
+                                <td>Nama Lengkap</td>
+                                <td>:<input type="text" name="nama-lengkap" placeholder="Nama Lengkap..."/></td>
+                            </tr>
+                        </p>
+                        <p>
+                            <tr>
+                                <td class="nomor">5</td>
+                                <td>NIK</td>
+                                <td>:<input type="text" name="nik" placeholder="Nomor Induk Kependudukan..."/></td>
+                            </tr>
+                        </p>
+                    </table>
+                        <p>
+
+                        </p>
+
+                    
+            </fieldset>
+        </form>
     </body>
 </html>
