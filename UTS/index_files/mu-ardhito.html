@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C I N E M U S E !!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="gayague.css">
+		<link rel="shortcut icon" href="icon/music.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	<!--HEADERR DAN NAVIGASI MULAI-->
+		<div id="Home" class="tabcontent">
+			<h1>CINEMUSE</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music, movies, and books!</i></p>
+		</div>
+
+		<div id="Movies" class="tabcontent">
+			<h1>Movies</h1>
+			<p><i>Marathon a movies?🎬 Don't miss the preview before watch them!</i></p> 
+		</div>
+
+		<div id="Musics" class="tabcontent">
+			<h1>C I N E M U S E !</h1>
+			<p><i>Boost up your day with our music picks!  🎧🌈🌈</i></p>
+		</div>
+	
+		<div id="Books" class="tabcontent">
+			<h1>Books</h1>
+			<p><i>Wondering what to read?📖 We'll bring you the list!</i></p>
+		</div>
+	
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<p><i>Get to know us! Read down below to sip some tea</i></p>
+		</div>
+	
+		<div id="Guest" class="tabcontent">
+			<h1>Guest</h1>
+			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
+		</div>
+
+		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
+		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > <a href="movies.html">Movies</a></button>
+		<button class="tablink" onclick="openCity('Musics', this, '#03D202')" id="defaultOpen"> <a href="musics.html">Musics</a></button>
+		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<button class="tablink" onclick="openCity('About', this, '#C302D2')"> <a href="about.html">About</a></button>
+		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> <a href="guest.html">Guest</a></button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	<!--HEADERR DAN NAVIGASI SELESAI-->
+	
+	<!--ISI CONTENT DENGAN COLOUMN MULAI-->
+	<!--ATAS KIRI-->
+	<div class="row" style="background-color: #aaa; padding:25px;">
+		<br>
+		<h2 style="text-align:center;">Sendunya Ardhito Dalam Soundtrack <i>Story of Kale: When Someone’s in Love</i><br>
+		<br>
+		<img src="image/isi12.jpg" width=410px height=250px></h2>
+		<br>
+			<div style="align:top;float:right;">
+				<h3>The Story Behind</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Darah musik sudah melekat dalam dirinya sejak kecil, terbukti baru-baru ini Ardhito merilis lagu 'Sudah' yang nantinya 
+                    menjadi soundtrack filmnya yang baru berjudul 'Story of Kale: When Someone's In Love.Dalam lagunya tersebut Ardhito Pramono mengatakan bahwa 
+					lagu ini menceritakan tentang ajakan untuk berhenti bicara dan membiarkan dunia seperti adanya dan mulai melangkah ke hal lain dalam hubungan.</p>
+				<p style="text-align:center;">
+					<img src="image/isi10.jpg" width=410px height=250px></p>
+				<br>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Adapun untuk film ini, Ardhito telah menciptakan dua lagu baru, salah satunya 'Sudah' yang baru-baru ini telah dirilis pertama.
+                    Dari segi musik, dalam lagu 'Sudah' hadir dengan aransemen akustik, pelan namun membuat para pendengarnya sangat tersentuh.
+                    Ardhito di lagu 'Sudah' sangat menunjukkan kepiawaiannya dalam bermain musik, bagaimana tidak ia bermain piano dengan tambahan dua gitar yang bersahutan 
+                    serta dilengkapi dengan sentuhan mellotron dan organ hammond.</p>
+                <h3>Tentang Ardhito</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Ardhito Rifqi Pramono yang akrab dipanggil Ardhito (lahir di Jakarta, 22 Mei 1995; umur 25 tahun) adalah seorang penyanyi, penulis lagu dan 
+                    pemeran asal Indonesia. Selain seorang penyanyi, Ardhito pernah menjadi seorang creative planner dan juga music director. Ia juga pernah terlibat dengan penggarapan 
+                    sebuah short film dan web-series.</p>
+                <br>
+                <br>
+				<p>Berikut playlist dari Ardhito Pramono yang sudah kami pilih. Happy listening!</p>
+
+            </div>
+
+            <h3>Ardhito Pramono - Sudah</h3> 
+            <p><i>(Rate : 95/100)</i></p>
+                    <audio controls>
+                    <source src="audio/Ardhito Pramono - Sudah.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+                    </audio>
+
+            <h3>Ardhito Pramono ft Aurelie Moeremans - I Just Can't Save You Tonight</h3>
+            <p><i>(Rate : 93/100)</i></p>
+                    <audio controls>
+                    <source src="audio/Ardhito Pramono ft Aurelie Moeremans - I Just Can_t Save You Tonight.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+                    </audio>
+
+            <h3>Ardhito Pramono - I Can't Stop Loving You</h3>
+            <p><i>(Rate : 93/100)</p></i>
+                <audio controls>
+                    <source src="audio/Ardhito Pramono ft Aurelie Moeremans - I Just Can_t Save You Tonight.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+					</audio>
+		<div style="color:red"; >
+			
+			<p align="right"><b>  <a href="#">Ke Atas</a> </b>
+			</p>
+			</div>
+			
+	</div>
+	
+		<!--ISI CONTENT DENGAN COLOUMN SELESAI-->
+	<footer style="background-color: #03D202;">
+		<p>(c) Copyright November, 2020
+			<br>
+			Web Designed by Fauzia D.F. and Rhedy I.
+		</p>
+	</footer>
+</body>
+</html>

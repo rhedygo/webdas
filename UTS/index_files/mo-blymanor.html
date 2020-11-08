@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C I N E M U S E !!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="gayague.css">
+		<link rel="shortcut icon" href="icon/cine.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	<!--HEADERR DAN NAVIGASI MULAI-->
+		<div id="Home" class="tabcontent">
+			<h1>CINEMUSE</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music, movies, and books!</i></p>
+		</div>
+
+		<div id="Movies" class="tabcontent">
+			<h1>C I N E M U S E !</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music and movies!</i></p> 
+		</div>
+
+		<div id="Musics" class="tabcontent">
+			<h1>Musics</h1>
+			<p><i>Boost up your day with our music picks!  🎧🌈🌈</i></p>
+		</div>
+	
+		<div id="Books" class="tabcontent">
+			<h1>Books</h1>
+			<p><i>Wondering what to read?📖 We'll bring you the list!</i></p>
+		</div>
+	
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<p><i>Get to know us! Read down below to sip some tea</i></p>
+		</div>
+	
+		<div id="Guest" class="tabcontent">
+			<h1>Guest</h1>
+			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
+		</div>
+
+		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
+		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" id="defaultOpen"> <a href="movies.html">Movies</a></button>
+		<button class="tablink" onclick="openCity('Musics', this, '#03D202')"> <a href="musics.html">Musics</a></button>
+		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<button class="tablink" onclick="openCity('About', this, '#C302D2')"> <a href="about.html">About</a></button>
+		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> <a href="guest.html">Guest</a></button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	<!--HEADERR DAN NAVIGASI SELESAI-->
+	
+	<!--ISI CONTENT DENGAN COLOUMN MULAI-->
+	<!--ATAS KIRI-->
+	<div class="row" style="background-color:#aaa; padding:25px">
+		<br>
+					<h2 style="text-align:center;">The Haunting of Bly Manor : Teror Romansa Gothic<br>
+					<br>
+					<img src="image/isi5.jpg" width=450px height=250px></h2>
+					<br>
+						<div style="align:top;float:right;">
+							<h3>Sinopsis</h3>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;Berlatar 1980-an, serial ini mengangkat kisah horor-family dari sebuah keluarga yang tinggal di Desa Bly. Kejadian aneh dan mengerikan 
+								di mulai saat pengasuh anak di keluarga Henry Wingrave (Henry Thomas) tewas secara tragis. Henry kemudian mencari pengasuh pengganti untuk merawat dua keponakannya 
+								yang yatim-piatu, Flora (Amelie Bea Smith) dan Miles (Benjamin Evan Ainsworth).</p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;Ia pun menemukan sosok pengasuh pengganti bernama Dani Clayton (Victoria Padretti). Dani yang merupakan seorang guru asal Amerika ini pun dipertemukan dengan penghuni 
+								lainnya, seperti koki bernama Owen (Rahul Kohli), penjaga lahan Jamie (Amelia Eve) dan pengurus rumah tangga, Nyonya Grosse (T'Nia Miller). Kehidupan Flora, Miles, 
+								dan orang-orang yang tinggal di Bly Manor rupanya tak bisa tenang. Beragam kejadian aneh pun sering kali mengganggu mereka. Para penghuni meyakini ada yang tak beres 
+								terjadi di masa lalu dengan penghuni lamanya. Mereka pun berniat untuk membuka misteri-misteri yang terkubur. </p>
+							<h3>Resensi</h3>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;The Haunting of Bly Manor adalahserial televisi streaming drama horor supernatural Amerika, yang dibuat oleh Mike Flanagan untuk Netflix, 
+								dan secara longgar didasarkan padakarya Henry James . Ini adalah seri lanjutan dari The Haunting of Hill House dan entri kedua dalamseri antologi The Haunting. 
+								Tim kreatif dan sebagian besar pemeran Hill House kembali ke Bly Manor , tetapi narasi kedua seri tidak terhubung. The Haunting of Bly Manor tayang perdana di 
+								Netflix pada 9 Oktober 2020. Victoria Pedretti , Oliver Jackson-Cohen , Henry Thomas , Kate Siegel , Carla Gugino , dan Catherine Parker kembali sebagai bagian 
+								dari pemeran untuk seri kedua, memerankan karakter yang berbeda.</p>
+							<h3>Review</h3>
+							<h1>90 dari 100</h1>
+							<h3>Trailer Clip</h3>
+							<p>Berikut trailer clip dari The Haunting of Bly Manor. Selamat menonton!</p>
+		
+						</div>
+				<p align="center">
+					<video width="80%" controls>
+					<source src="video/The Haunting of Bly Manor - Teaser Clip.mp4" type="video/mp4">
+					Your browser does not support HTML5 video.
+					</video>
+				</p>
+				<p style="text-align:center;">The Haunting of Bly Manor</p>
+				<br>
+
+		<div style="color:red"; >
+			
+			<p align="right"><b>  <a href="#">Ke Atas</a> </b>
+			</p>
+			</div>
+	
+		</div>
+	</div>	
+	
+		<!--ISI CONTENT DENGAN COLOUMN SELESAI-->
+	<footer style="background-color: #0211D2;">
+		<p>(c) Copyright November, 2020
+			<br>
+			Web Designed by Fauzia D.F. and Rhedy I.
+		</p>
+	</footer>
+</body>
+</html>

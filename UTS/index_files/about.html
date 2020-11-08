@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C I N E M U S E !!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="gayague.css">
+		<link rel="shortcut icon" href="icon/anchor.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	<!--HEADERR DAN NAVIGASI MULAI-->
+		<div id="Home" class="tabcontent">
+			<h1>CINEMUSE</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music, movies, and books!</i></p>
+		</div>
+
+		<div id="Movies" class="tabcontent">
+			<h1>Movies</h1>
+			<p><i>Marathon a movies?🎬 Don't miss the preview before watch them!</i></p> 
+		</div>
+
+		<div id="Musics" class="tabcontent">
+			<h1>Musics</h1>
+			<p><i>Boost up your day with our music picks!  🎧🌈🌈</i></p>
+		</div>
+	
+		<div id="Books" class="tabcontent">
+			<h1>Books</h1>
+			<p><i>Wondering what to read?📖 We'll bring you the list!</i></p>
+		</div>
+	
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<p><i>Get to know us! Read down below to sip some tea</i></p>
+		</div>
+	
+		<div id="Guest" class="tabcontent">
+			<h1>Guest</h1>
+			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
+		</div>
+
+		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
+		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > <a href="movies.html">Movies</a></button>
+		<button class="tablink" onclick="openCity('Musics', this, '#03D202')"> <a href="musics.html">Musics</a></button>
+		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<button class="tablink" onclick="openCity('About', this, '#C302D2')" id="defaultOpen"> <a href="about.html">About</a></button>
+		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> <a href="guest.html">Guest</a></button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	<!--HEADERR DAN NAVIGASI SELESAI-->
+	
+	<!--ISI CONTENT DENGAN COLOUMN MULAI-->
+
+	<div class="row" style="background-color:#aaa">
+		<div class="columna" style="background-color:#aaa;padding-left:20px ;">
+			<p><h2 >Fauzia Dhiyaa' Farros</h2>
+			<img src="image/dhiya.jpg" style="float:left; width:300px; height:300px; padding-right: 20px;">
+			<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who's living in Panda, Semarang, Central Java and Alumna of SMA Negeri 1 Semarang.
+			Third semester student of informatics engineering. Want to become a reliable programmer 
+			in the future and be able to work in multinational companies.</i>
+			</p>
+		</div>
+		<div class="columna" style="background-color:#aaa;padding-left:20px">
+			<h2>Rhedy Irwan</h2>
+			<img src="image/rhedy.jpg" style="float:left; width:300px; height:300px; padding-right:20px; padding-bottom: 20px;">
+		   <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Who's living in Tembalang, Semarang, Central Java and Alumna of SMA Negeri 9 Semarang.
+			Studying in University of Dian Nuswantoro who's hoping that has his own tech company in
+			the future. Seeking to be inspired, to work hard for things that are worth it, and to be
+			surrounded by those who bring out the best in me.</i>
+
+			<br>
+			
+		</div>
+		<div class="columna" style="background-color:#aaa;padding-left:20px">
+		<p class="text-light text-justify">
+			<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This website was designed by Fauzia Dhiya Farros and Rhedy Irwan as the fulfillment of a web-based programming midterm final exam. Furthermore, this web will also be published in 
+			the github repository of each group member. In <b>C I N E M U S E !</b> you can find references for films, musics, or books from our selective picks that definitely 
+			great and can encourage your day! We have reviewed all subjects in detail along with previews. All reviews are honest and we don’t cooperate with any parties. Musics, films, 
+			or books have also been officially released on many platforms, so it don't violate copyright.</i></p>
+			<br>
+			<br>
+		</div>
+		<div style="text-align: right; padding-right: 50px;"
+			<h4 style="text-align:right;"></h4>
+			<h3>XO 💕, 
+				<br>
+				<br>
+				C I N E M U S E !</h3>
+		</div>
+		<div style="color:red"; >
+			
+			<p align="right"><b>  <a href="#">Ke Atas</a> </b>
+			</p>
+			</div>
+
+
+	</div>
+	
+		<!--ISI CONTENT DENGAN COLOUMN SELESAI-->
+	<footer style="background-color:#C302D2;">
+		<p>(c) Copyright November, 2020
+			<br>
+			Web Designed by Fauzia D.F. and Rhedy I.
+		</p>
+	</footer>
+</body>
+</html>

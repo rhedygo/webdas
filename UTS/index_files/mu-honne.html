@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C I N E M U S E !!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="gayague.css">
+		<link rel="shortcut icon" href="icon/music.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	<!--HEADERR DAN NAVIGASI MULAI-->
+		<div id="Home" class="tabcontent">
+			<h1>CINEMUSE</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music, movies, and books!</i></p>
+		</div>
+
+		<div id="Movies" class="tabcontent">
+			<h1>Movies</h1>
+			<p><i>Marathon a movies?🎬 Don't miss the preview before watch them!</i></p> 
+		</div>
+
+		<div id="Musics" class="tabcontent">
+			<h1>C I N E M U S E !</h1>
+			<p><i>Boost up your day with our music picks!  🎧🌈🌈</i></p>
+		</div>
+	
+		<div id="Books" class="tabcontent">
+			<h1>Books</h1>
+			<p><i>Wondering what to read?📖 We'll bring you the list!</i></p>
+		</div>
+	
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<p><i>Get to know us! Read down below to sip some tea</i></p>
+		</div>
+	
+		<div id="Guest" class="tabcontent">
+			<h1>Guest</h1>
+			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
+		</div>
+
+		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
+		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > <a href="movies.html">Movies</a></button>
+		<button class="tablink" onclick="openCity('Musics', this, '#03D202')" id="defaultOpen"> <a href="musics.html">Musics</a></button>
+		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<button class="tablink" onclick="openCity('About', this, '#C302D2')"> <a href="about.html">About</a></button>
+		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> <a href="guest.html">Guest</a></button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	<!--HEADERR DAN NAVIGASI SELESAI-->
+	
+	<!--ISI CONTENT DENGAN COLOUMN MULAI-->
+	<!--ATAS KIRI-->
+	<div class="row" style="background-color: #aaa; padding:25px;">
+		<br>
+		<h2 style="text-align:center;">Mengenal HONNE, Duo Produser Pop Soulful Asal Inggris<br>
+		<br>
+		<img src="image/isi6.jpg" width=410px height=250px></h2>
+		<br>
+			<div style="align:top;float:right;">
+                <h3>Tentang HONNE</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Sebagai sebuah duo yang digawangi oleh dua produser asal Inggris, James Hatcher dan Andy Clutterbuck bertemu kala berkuliah dan mulai 
+                berkolaborasi semenjak masih duduk mengemban studi. Mengutip Allmusic, inspirasi pemilihan nama “HONNE” dari bermuara dari sebuah konsep asal Jepang yang mengupas 
+                “true feelings” atau “perasaan yang jujur”.  Mereka mengusung musik elektronik yang digubah menjadi alunan nada-nada pop yang hangat dan ramah. Berkiblat pada musik-
+                musik Al Green dan Bill Withers, Honne kerap menggubah musik mereka yang cozy itu mampu diterima banyak orang lintas usia. Debut mereka, sebuah EP bertajuk Warm on 
+                a Cold Night mendarat pada bulan September 2014. Melaluinya, nama mereka semakin melambung, terutama dengan hit single title track-nya yang berhasil menjadi sensasi 
+                dengan sendirinya.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Berbicara studio album, Album perdana Honne hadir dengan nama yang akrab ditelinga. Ya, debut album mereka dikemas dengan nama yang sama 
+                seperti debut EP mereka, Warm on a Cold Night. Album perdana dari HONNE ini mengudara pada Juli 2015. Hits single seperti “Warm on a Cold Night”, “Someone That Loves 
+                You”, dan “Treat Your Right” dikemas ke dalamnya.</p>
+                <br>
+                <br>
+				<p>Berikut playlist dari HONNE yang sudah kami pilih. Happy listening!</p>
+
+            </div>
+
+            <h3>HONNE - Warm On A Cold Night</h3> 
+            <p><i>(Rate : 98/100)</i></p>
+                <audio controls>
+                    <source src="audio/HONNE - Warm On A Cold Night.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+                </audio>
+            <h3>HONNE - No Song Without You</h3>
+            <p><i>(Rate : 90/100)</i></p>
+                <audio controls>
+                    <source src="audio/HONNE - No Song Without You.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+                </audio>
+            <h3>HONNE - It Ain't Wrong Loving You</h3>
+            <p><i>(Rate : 91/100)</i></p>
+                <audio controls>
+                    <source src="audio/HONNE - It Ain't Wrong Loving You.mp3" type="audio/mp3"  width="200%">
+                    Your browser does not support the audio element.
+                </audio>
+
+		<div style="color:red"; >
+			
+			<p align="right"><b>  <a href="#">Ke Atas</a> </b>
+			</p>
+			</div>
+		</div>	
+	</div>
+	
+		<!--ISI CONTENT DENGAN COLOUMN SELESAI-->
+	<footer style="background-color: #03D202;">
+		<p>(c) Copyright November, 2020
+			<br>
+			Web Designed by Fauzia D.F. and Rhedy I.
+		</p>
+	</footer>
+</body>
+</html>

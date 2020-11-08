@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C I N E M U S E !!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="gayague.css">
+		<link rel="shortcut icon" href="icon/lips.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	<!--HEADERR DAN NAVIGASI MULAI-->
+		<div id="Home" class="tabcontent">
+			<h1>CINEMUSE</h1>
+			<p><i>Your daily dose in art 💕 We serve you a great taste in music, movies, and books!</i></p>
+		</div>
+
+		<div id="Movies" class="tabcontent">
+			<h1>Movies</h1>
+			<p><i>Marathon a movies?🎬 Don't miss the preview before watch them!</i></p> 
+		</div>
+
+		<div id="Musics" class="tabcontent">
+			<h1>Musics</h1>
+			<p><i>Boost up your day with our music picks!  🎧🌈🌈</i></p>
+		</div>
+	
+		<div id="Books" class="tabcontent">
+			<h1>Books</h1>
+			<p><i>Wondering what to read?📖 We'll bring you the list!</i></p>
+		</div>
+	
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<p><i>Get to know us! Read down below to sip some tea</i></p>
+		</div>
+	
+		<div id="Guest" class="tabcontent">
+			<h1>Guest</h1>
+			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
+		</div>
+
+		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
+		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > <a href="movies.html">Movies</a></button>
+		<button class="tablink" onclick="openCity('Musics', this, '#03D202')"> <a href="musics.html">Musics</a></button>
+		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<button class="tablink" onclick="openCity('About', this, '#C302D2')" > <a href="about.html">About</a></button>
+		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"id="defaultOpen"> <a href="guest.html">Guest</a></button>
+
+	<script>
+	function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+	<!--HEADERR DAN NAVIGASI SELESAI-->
+	
+	<!--ISI CONTENT DENGAN COLOUMN MULAI-->
+
+	<div class="row" style="background-color:#aaa; padding:100px; ">
+		<table class="table">
+			<div class="row">
+				<form>
+			<tr>
+			 <br>
+			 <div style="color:white";>
+			 Hi, Fellas! Silahkan isi daftar tamu ini yaa setelah berkunjung 😊
+			 <br>
+			 <br>
+				Nama:  <input type="text" name="TR" size="55">
+				<br>
+				<br>
+				Hobbies:<br>
+					<input type="checkbox" name="Menonton Film" value="ya">Menonton Film<br>
+					<input type="checkbox" name="Mendengarkan Musik" value="ya">Mendengarkan Musik<br>
+					<input type="checkbox" name="Membaca Buku" value="ya">Membaca Buku<br>
+				<br>
+				Jenis Kelamin:<br>
+					<input type="checkbox" name="Laki-laki" value="L">Laki-laki<br>
+					<input type="checkbox" name="Perempuan" value="P">Perempuan<br>
+				<br>
+				Sosial Media:<br>
+					<input type="checkbox" name="Line" value="ya">Line
+					<input type="checkbox" name="Instagram" value="ya">Instagram
+					<input type="checkbox" name="Twitter" value="ya">Twitter
+					<input type="checkbox" name="Whatsapp" value="ya">Whatsapp
+					<input type="checkbox" name="JOOX" value="ya">JOOX
+					<input type="checkbox" name="Spotify" value="ya">Spotify
+					
+					<br>
+					<br>
+				Yang paling favorit dalam website kami ✨ :<br>
+					<select name="info">
+					<option selected="select">--=Pilihan=--</option>
+					<option value="movies"> Films</option>
+					<option value="musics"> Musics</option>
+					<option value="events"> Books</option>
+					<option value="everything"> All of it.</option>
+					</select>
+					<br>
+					<br>
+				Kritik dan saran: <br>
+					<textarea name="pesan" cols="40" rows="2"></textarea>
+					<br> 
+					<br>
+				Masukan kata sandi Verifikasi : <br>
+					<input type="password" value="Kata Sandi">
+					<br>
+					<br>
+				Unggah berkas jika diperlukan dibawah ini <br>
+					<input type="file">
+					<br>
+					<br>
+					<input type="submit" value="Kirim">
+					<input type="reset" value="Batal">
+					<br>
+			</form>
+			</div>
+		</div>
+			</div>
+		</table>
+		<div style="color:red"; >
+			
+			<p align="right"><b>  <a href="#">Ke Atas</a> </b>
+			</p>
+			</div>
+
+
+	</div>
+	
+		<!--ISI CONTENT DENGAN COLOUMN SELESAI-->
+	<footer style="background-color: #D29F02;">
+		<p>(c) Copyright November, 2020
+			<br>
+			Web Designed by Fauzia D.F. and Rhedy I.
+		</p>
+	</footer>
+</body>
+</html>
