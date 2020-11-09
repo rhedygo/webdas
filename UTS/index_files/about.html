@@ -40,30 +40,30 @@
 			<p><i>Feel free to give some critics and suggestions for next blog development!</i></p>
 		</div>
 
-		<button class="tablink" onclick="openCity('Home', this, '#D20202')"> <a href="../index.html">Home</a></button>
-		<button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > <a href="movies.html">Movies</a></button>
-		<button class="tablink" onclick="openCity('Musics', this, '#03D202')"> <a href="musics.html">Musics</a></button>
-		<button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> <a href="books.html">Books</a></button>
+		<a href="../index.html"><button class="tablink" onclick="openCity('Home', this, '#D20202')"> Home</button></a>
+		<a href="movies.html"><button class="tablink" onclick="openCity('Movies', this, '#0211D2')" > Movies</button></a>
+		<a href="musics.html"><button class="tablink" onclick="openCity('Musics', this, '#03D202')">Musics</button></a>
+		<a href="books.html"><button class="tablink" onclick="openCity('Books', this, '#02D2D0')"> Books</button></a>
 		<button class="tablink" onclick="openCity('About', this, '#C302D2')" id="defaultOpen"> <a href="about.html">About</a></button>
-		<button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> <a href="guest.html">Guest</a></button>
+		<a href="guest.html"><button class="tablink" onclick="openCity('Guest', this, '#D29F02')"> Guest</button></a>
 
 	<script>
 	function openCity(cityName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].style.backgroundColor = "";
+		}
+		document.getElementById(cityName).style.display = "block";
+		elmnt.style.backgroundColor = color;
 
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
 	</script>
 	<!--HEADERR DAN NAVIGASI SELESAI-->
 	
