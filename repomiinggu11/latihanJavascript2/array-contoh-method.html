@@ -1,0 +1,41 @@
+<!-- NAMA : RHEDY IRWAN -->
+<!-- NIM : A11.2019.11946 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Array Contoh Method</title>
+    </head>
+    <body>
+        <script>
+            //   method filter
+            const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+            // ambil data yang hanya habis dibagi dua
+            const filteredArray = angka.filter(item => item % 2 == 0);
+
+            console.log(filteredArray) // -> [2, 4, 6, 8]
+
+            //method inncludes
+            var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+
+            //apakah kacang sudah du dalam array tanaman ?
+            var adaKacang = tanaman.includes("Kacang");
+
+            console.log(adaKacang); //-> true
+
+            //apakah ada bayam ?
+            var adaBayam = tanaman.includes("Bayam");;
+
+            console.log(adaBayam); //-> false
+
+            //method short
+            var alfabet = ['a' , 'f' , 'z' , 'e' , 'r' , 'g'];
+            var angk = [3, 1, 2, 6, 8, 5];
+
+            console.log(alfabet.sort()); //-> ["a", "e", "f", "g", "r", "z"]
+            console.log(angk.sort()); //-> [1, 2, 3, 5, 6, 8]
+
+        </script>
+    </body>
+</html>
