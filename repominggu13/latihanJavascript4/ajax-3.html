@@ -1,0 +1,46 @@
+<!-- NAMA : RHEDY IRWAN-->
+<!-- NIM : A11.2019.11946-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title> belajar Dasar Ajax</title>
+    </head>
+
+    <body>
+        <h1>Kirim Data dengan Ajax</h1>
+        <form method="POST" onsubmit="returnt sendDAta()">
+            <p>
+                <label>Tittle</label>
+                <inputt type="text" palceholder="judul artikel"></inputt>
+            </p>
+            <p>
+                <label>Isi Artikel</label>
+                <textarea id="body" palceholder="isi artikel..." cold="50" rows="10"></textarea>
+            </p>
+            <input type="submit" value="Kirim"/>
+        </form>
+
+        <script>
+            function sendData() {
+                var xhr = new XMLHttpRequest();
+                var url = "https://jsonplaceholder.typicode.com/posts";
+
+                var data = JSON.stringify({
+                    title: document.getElementById("title").value,
+                    body: document.getElementById("body").value,
+                    userId: 1
+                });
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader("Conten-Type", "application/json;charset=UTF-8");
+                chr.onload = function () {
+                    console.log (this.responseText);
+                };
+                xhr.send(data);
+                return false;
+            }
+        </script>
+    </body>
+</html>
